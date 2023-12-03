@@ -54,29 +54,52 @@ h3 {
 
 .works {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
-#bg-images{
+/* #bg-images {
     background-image: url(images/Ellipse\ 37.png);
     background-repeat: no-repeat;
     padding-left: 12%;
 
+} */
+.group-img{
+    position: relative;
+}
+
+#bg-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: -1;
 }
 
 .bg-color {
     background-color: #F5F5F5;
 }
-.download{
+
+.download {
     display: grid;
-    grid-template-columns:  2fr 2fr;
-    column-gap: 30px;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 70px;
+}
+
+#app {
+    padding-top: 20%;
 }
 
 .mission {
     padding-left: 12%;
     padding-right: 12%;
 }
+
+.rushan-color {
+    color: #A56CF7;
+}
+
+
 
 .footer {
     display: grid;
@@ -85,11 +108,14 @@ h3 {
     padding-left: 7%;
     padding-right: 7%;
 }
-.foo{
+
+.foo {
     padding-left: 34%;
 }
-.icon{
+
+.icon {
     padding-left: 85%;
 
-    
+
+
 }
