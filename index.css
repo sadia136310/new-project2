@@ -63,7 +63,7 @@ h3 {
     padding-left: 12%;
 
 } */
-.group-img{
+.group-img {
     position: relative;
 }
 
@@ -71,7 +71,7 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
     z-index: -1;
 }
@@ -90,6 +90,35 @@ h3 {
     padding-top: 20%;
 }
 
+h4 span {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 40px;
+
+}
+
+h4 span::before,
+h4 span::after {
+    content: '';
+    height: 2px;
+    width: 100px;
+    background-color: grey;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+h4 span::before {
+    left: -100px;
+
+
+}
+
+h4 span::after {
+    right: -100px;
+}
+
 .mission {
     padding-left: 12%;
     padding-right: 12%;
@@ -98,8 +127,6 @@ h3 {
 .rushan-color {
     color: #A56CF7;
 }
-
-
 
 .footer {
     display: grid;
@@ -113,9 +140,23 @@ h3 {
     padding-left: 34%;
 }
 
-.icon {
-    padding-left: 85%;
+.social-media {
 
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 28px;
 
+}
 
+.fa-facebook,
+.fa-linkedin {
+    color: #1877F2;
+}
+
+.fa-square-whatsapp {
+    color: #075E54;
+}
+.fa-instagram{
+color: mediumvioletred;
 }
